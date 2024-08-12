@@ -1,0 +1,91 @@
+/* app.component.css */
+
+/* Apply a global font style */
+body {
+    font-family: 'Roboto', sans-serif; /* Use a clean, modern font */
+}
+
+/* Basic form styling */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #b2d8b2; /* Light-green border */
+    border-radius: 10px;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: inherit; /* Inherit the global font */
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+}
+
+/* Input styling */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #b2d8b2; /* Light-green border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #555; /* Dark text color */
+    background-color: #f8fff8; /* Very light green background */
+    font-family: inherit; /* Inherit the global font */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #4caf50; /* Darker green on focus */
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(76, 175, 80, 0.5); /* Green shadow on focus */
+}
+
+/* Error message styling */
+span {
+    color: #e57373; /* Light red color for errors */
+    font-size: 12px;
+    margin-top: -8px;
+    display: block;
+    margin-bottom: 10px;
+    font-family: inherit; /* Inherit the global font */
+}
+
+/* Button styling */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: inherit; /* Inherit the global font */
+}
+
+button[type="submit"]:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+/* Address section styling */
+div[formsGroupName="address"] {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #b2d8b2; /* Light-green border */
+    border-radius: 5px;
+    background-color: #e8f5e9; /* Light green background */
+    font-family: inherit; /* Inherit the global font */
+}
+
+/* Align labels and inputs in the address section */
+div[formsGroupName="address"] label {
+    margin-top: 10px;
+}

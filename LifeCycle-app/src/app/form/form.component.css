@@ -1,0 +1,54 @@
+/* General styles for the container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Styles for the label */
+label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Styles for the input field */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* General button styles */
+button {
+    background-color: #4CAF50; /* Green background */
+    border: none;             /* Remove borders */
+    color: white;             /* White text */
+    padding: 15px 32px;       /* Some padding */
+    text-align: center;       /* Center the text */
+    text-decoration: none;    /* Remove underline */
+    display: inline-block;    /* Make the buttons appear in-line */
+    font-size: 16px;          /* Increase font size */
+    margin: 4px 2px;          /* Add some margin */
+    cursor: pointer;          /* Pointer/hand icon on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+/* Styles for the list component */
+app-list {
+    display: block;
+    margin-top: 20px;
+}

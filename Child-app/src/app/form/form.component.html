@@ -1,0 +1,15 @@
+<h1> String Start  Here !!</h1>
+<label>Brand Name</label>
+<input type="text" [(ngModel)]="brand">
+<button (click)="addBrand()">Save Brand</button>
+
+
+<!--- object-->
+<h1> Object child to parent !! </h1>
+<form (ngSubmit)="addCar()">
+    <label>Car Model:</label>
+    <input placeholder="Enter Car Model"  type="text" [(ngModel)]="model" name="model" required>
+    <label>Year:</label>
+    <input   placeholder="Enter car price "   type="number" [(ngModel)]="price" name="price" required>  
+    <button type="submit">Add Car</button>
+  </form>

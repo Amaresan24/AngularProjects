@@ -1,0 +1,24 @@
+<h1>Employee Full Details</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>OPtions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let em of emps">
+      <td>{{ em.id }}</td>
+      <td>{{ em.name }}</td>
+      <td>{{ em.gender }}</td>
+      <td>
+        <button>View</button>
+        <button>Update</button>
+        <button>Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

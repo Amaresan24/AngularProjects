@@ -1,0 +1,34 @@
+<p>Books Details</p>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr *ngFor= "let b of books">
+<td>{{b.name}}</td>
+<td>{{b.author}}</td>
+<td>{{b.price}}</td>
+</tr>
+    </tbody>
+</table>
+
+<!--- View Store One Value One Array -->
+<h1>Store Only one  value on  String array</h1>
+<table>
+    <thead>
+        <tr>BrandNames</tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let d of brands ">
+    <td> {{d}}</td>
+    
+        </tr>
+    </tbody>
+    
+    </table>
+    <br>
+    

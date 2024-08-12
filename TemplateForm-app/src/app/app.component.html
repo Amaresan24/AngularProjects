@@ -1,0 +1,20 @@
+<h1>Template Rewand Form</h1>
+
+<form #MyForm="ngForm" (submit)="SubmitName(MyForm)">
+  <label> Brand Name</label>
+  <input type="text" [(ngModel)]="title" name="title" #Input="ngModel"  required maxlength="5" />
+  <!--- Input.dirty == true-->
+<span *ngIf="Input.valid ==false  && Input.touched == true">
+  Please Enter the Value 
+</span>
+<span *ngIf=" Input.name.length == 5 && Input.dirty == true">  Only Five Characters Allo </span>
+
+<span  *ngIf="Input.valid == false && Input.touched == true">
+<span *ngIf=" Input.errors?.['required'] && Input.dirty == true"> only Five Characters Allowed </span>
+</span>
+
+
+
+
+  <button>Submit</button>
+</form>

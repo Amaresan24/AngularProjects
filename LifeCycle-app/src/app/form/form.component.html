@@ -1,0 +1,15 @@
+<!-- <p>form works!</p> -->
+<app-list [brandsinput] ="brands"></app-list>
+
+<label> Brand Name </label>
+<input placeholder="Enter brand me" type="text" [(ngModel)] = "brand">
+<button (click) =  "Submits()"> Save Item</button>
+<!---   -->
+
+<input type="checkbox" [(ngModel)] = "showtable">
+<div *ngIf="showtable == true this list" >
+
+<ng-template #list></ng-template>
+<app-list [brandsinput]="brands"></app-list>
+
+</div>

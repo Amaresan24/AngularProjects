@@ -1,0 +1,24 @@
+<p>form works!</p>
+<app-list [booksinput] = "books"></app-list>
+<h1>Please the fill the form </h1>
+<label>name</label>
+<input type="text" [(ngModel)] = "name">
+<br>
+<label> Author </label>
+<input type="text" [(ngModel)] = "author">
+<br>
+<label> Price </label>
+<input type="number" [(ngModel)] = "price">
+
+<br>
+<br>
+<button (click)= "Submit()">Submit</button>
+
+
+<!-----   Store Only one String in array   -->
+<app-list [brandsinput] = "brands"></app-list>
+    <label>Brand Name</label>
+    <input type="text" placeholder="Enter brand name" [(ngModel)] = "bran">
+    <button (click)="submits()"> view Brands</button>
+    
+

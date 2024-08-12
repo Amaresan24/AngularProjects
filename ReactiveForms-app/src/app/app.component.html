@@ -1,0 +1,43 @@
+
+<body>
+<form [formGroup]="myForm" (submit)="submit()">
+  <!-- From Control Name Start Here !! -->
+  <label>Name:</label>
+  <input type="text" placeholder="Enter your Name" formControlName="name" />
+  <span *ngIf="name?.valid == false && name?.touched == true">
+    <span *ngIf="name?.errors?.['required']">Name is Mandatory</span>
+    <span *ngIf="name?.errors?.['maxlength']"
+      >Only 5 characters are allowed</span
+    >
+  </span>
+<!--- From Control Age Start Here -->
+  <label>Age:</label>
+  <input type="number" placeholder="Enter your Age" formControlName="age" />
+  <span *ngIf="age?.valid == false && age?.touched == true">
+    <span *ngIf="age?.errors?.['required']"> Your Age is Mandatory</span>
+    <span *ngIf="age?.errors?.['min']"> Your Age is above 18 !!</span>
+  </span>
+<!---- Address From Group Start Here !! -->
+  <div formGroupName="address">
+    <label>Address</label>
+    <br />
+    <label>Door:</label>
+    <input type="text"   placeholder="Enter the Door no:" formControlName="door" />
+    <span *ngIf="door?.valid == false && door?.touched == true">
+      <span *ngIf="door?.errors?.['required']">
+        Door Number is Mandatory!!</span>
+    </span>
+
+    <br />
+    <label>Street:</label>
+    <input type="text" placeholder="Enter Street name "   formControlName="street" />
+    <span *ngIf="street?.valid == false && street?.touched == true">
+      <span *ngIf="street?.errors?.['required']">Enter your Street Name!!</span>
+      <span *ngIf="street?.errors?.['maxlength']"> Minimum 20 Characters enter !!</span>
+    </span>
+  </div>
+  <br />
+  <!---- Address From Group End  Here !! -->
+  <button type="submit">Submit</button>
+</form>
+</body>

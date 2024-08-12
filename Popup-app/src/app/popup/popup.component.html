@@ -1,0 +1,8 @@
+<!-- <p>popup works!</p> -->
+
+<div *ngIf="isVisible" @fadeInOut class="popup-container">
+    <div class="popup-content">
+      <ng-content></ng-content>
+      <button (click)="close()">Close</button>
+    </div>
+  </div>

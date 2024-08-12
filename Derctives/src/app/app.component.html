@@ -1,0 +1,127 @@
+<h1>{{nums[0]}}</h1>
+<h1>{{nums[1]}}</h1>
+<h1>{{nums[2]}}</h1>
+<h1>{{nums[3]}}</h1>
+<h1>{{nums[4]}}</h1>
+
+<!---- poperty Binding -->
+<h1>=>Poperty  Binding </h1>
+<input type="text" [value]="title">
+<!---- poperty Binding -->
+
+<!---- one -way binding  Start here -->
+<h1>=>  One -way Binding</h1>
+<h3>This is one Way Binding <=> {{title}}</h3>
+<!---- one -way binding  End  here -->
+
+
+
+<!--- Directives  start here -->
+<h1>=> Ng For  Directvies </h1>
+<ul>
+<li *ngFor="let n of nums">{{n}}</li>
+</ul>
+<!--- Directives  End  here -->
+
+<!--- Structure Directives  start here -->
+<h1>=> Movie List in String </h1>
+<ol *ngIf="isvisible"> <!---ngif is check have or not -->
+    <!---its *nfor  is used looping the data -->
+<li *ngFor="let sethu of Movies"> {{sethu | uppercase}}</li> 
+</ol>
+<button (click)=" hidelist()">Hide items </button>
+<h1>=>NgModel Two-way Binding</h1>
+<input type="text"[(ngModel)]="data">
+<button (click)="submit()">save</button>
+<!--- Structure Directives  End  here -->
+
+
+<!--- Class And object  start Here -->
+<h1>=> Class And Object</h1>
+<table>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+    </tr>
+</thead>
+
+<tbody>
+<tr>
+    <td>{{emp.name}}</td>
+    <td>{{emp.age}}</td>
+    <td>{{emp.gender}}</td>
+</tr>
+</tbody>
+</table>
+<button (click)= "create()" >view </button>
+<!--- Class And object  End  Here -->
+
+
+
+<!--- Dynamic structure start here  -->
+<h1>=> Dynamic  Data  Installization </h1>
+
+<table>
+    <thead>
+    
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
+    </thead>
+        <tbody>
+    <tr>
+        <td *ngFor="let n of emps">{{n.name}}</td>
+        <td *ngFor="let n of emps">{{n.age}}</td>
+        <td *ngFor="let n of emps">{{n.gender}}</td>
+    </tr>
+    </tbody>
+    </table>
+<br>
+<label>Name:</label>
+<input placeholder="EnterName" type ="text"  [(ngModel)] = "emp1.name"><br>
+<label>Age:</label>
+<input placeholder="EnterAge" type ="text"  [(ngModel)] = "emp1.age"><br>
+<label>Gender:</label>
+<input placeholder="EnterGender" type ="text"  [(ngModel)] = "emp1.gender"><br>
+<button (click)= "saveEmployee()"> Submit</button>
+<!--- Dynamic structure End  here  -->
+
+
+<!--- ngSwitch  Strcture Directives -->
+<div [ngSwitch]="day"> 
+<h1>=> ngSwitch  Structure  Directives</h1>
+<h3 *ngSwitchCase="0">sunday </h3>
+<h3 *ngSwitchCase="1">Monday</h3>    
+<h3 *ngSwitchCase="2">Tuesday</h3>
+<h3 *ngSwitchCase="3">Wednesday</h3>
+<h3 *ngSwitchCase="4">Thursady</h3>
+<h3 *ngSwitchCase="5">Friday </h3>
+<h3 *ngSwitchCase="6">Saturday</h3>
+<h3 *ngSwitchDefault>notFound</h3>
+</div>
+<!--- End Here -->
+
+<!---  Store in Array in objects -->
+<h1> => Store Array in objects </h1>
+<table *ngIf="visible">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>  
+        </tr>
+    </thead>
+        <tbody>
+    <tr *ngFor="let n of students">
+        <td>{{n.name}}</td>
+        <td>{{n.age}}</td>
+    </tr>
+    </tbody>
+    </table>
+
+<button (click)="show()"> show Students</button>
+<!---- Array objects End Here -->
+

@@ -1,0 +1,112 @@
+/* Style for the toolbar container */
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #007bff; /* Blue background for the toolbar */
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the title of the toolbar */
+  .toolbar-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff; /* White text color for the title */
+  }
+  
+  /* Style for the navigation links container */
+  .toolbar-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style for each navigation link */
+  .toolbar-links a {
+    color: #ffffff; /* White text color for links */
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Change link color on hover */
+  .toolbar-links a:hover {
+    color: #ffc107; /* Change color to yellow on hover */
+    transform: scale(1.05); /* Slightly enlarge the link on hover */
+  }
+  
+  /* Responsive Design: Adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .toolbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 20px;
+    }
+  
+    .toolbar-links {
+      margin-top: 10px;
+      justify-content: flex-start;
+      width: 100%;
+    }
+  
+    .toolbar-links a {
+      margin-left: 0;
+      margin-right: 15px;
+      font-size: 16px;
+    }
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #007bff; /* Blue background color */
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Style for the navbar title */
+  .navbar-title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  /* Style for the navbar links */
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  /* Style for each link */
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  /* Change link color on hover */
+  .navbar-links a:hover {
+    color: #ffc107; /* Yellow color on hover */
+    transform: scale(1.05); /* Slightly enlarge the link on hover */
+  }
+
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .navbar-links {
+      margin-top: 10px;
+      flex-direction: column;
+      gap: 10px;
+    }
+}
+  
